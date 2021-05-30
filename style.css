@@ -15,9 +15,13 @@
 .navbar{
     position: fixed;
     width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
     padding: 15px 0;
     background: navy;
-    font-family: 'Ubuntu', sans-serif;
 }
 .navbar .max-width{
     display: flex;
@@ -29,6 +33,13 @@
     font-size: 35px;
     font-weight: 600;
 }
+.navbar .logo a span{
+    color: navy;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -38,4 +49,43 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s
+}
+.navbar .menu li a:hover{
+    color: navy;
+}
+.navbar.sticky .menu li a:hover{
+    color: white;
+}
+
+/* menu btn styling */
+
+/* home section styling */
+.home{
+    display: flex;
+    /* background: url("images/banner.jpg") no-repeat center; */
+    background-color: lightgray;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: navy;
+    font-weight: 500;
 }
