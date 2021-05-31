@@ -51,7 +51,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    transition: color 0.3s
+    transition: color 0.3s;
 }
 .navbar .menu li a:hover{
     color: navy;
@@ -124,13 +124,13 @@ section{
 .about .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 500;
     margin-bottom: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+/* .about .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -145,7 +145,28 @@ section{
     position: absolute;
     bottom: -13px;
     left: 50%;
-    font-size: 20px;
+    font-size: 23px;
+    color: navy;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+} */
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 210px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    font-size: 23px;
     color: navy;
     padding: 5px;
     background: white;
@@ -197,6 +218,126 @@ section{
     background: none;
 }
 
+/* education styling  */
+.education{
+    font-family: 'PT Sans', sans-serif;
+    background-color: lightgrey;
+}
+.education .title{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.education .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 210px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.education .title::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    font-size: 23px;
+    color: navy;
+    padding: 5px;
+    background: lightgray;
+    transform: translateX(-50%);
+}
+.education .education-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.education .education-content .left{
+    width: 400px;
+}
+.education .education-content .left img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: auto;
+}
+.education .education-content .right{
+    width: 50%;
+}
+.education .education-content .right .school-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.education .education-content .right .school-name{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .right .date{
+    float: right;
+    font-size: 17px;
+}
+.education .education-content .right .school-header-2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.education .education-content .right .text{
+    font-size: 17px;
+    margin: 10px auto;
+}
+.education .education-content .right p{
+    text-align: justify;
+}
+.margin-bottom {
+     margin-bottom: 100px;
+}
+
+/* experience styling */
+.experience{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+}
+.experience .title{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.experience .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 231px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.experience .title::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    font-size: 23px;
+    color: navy;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width{
@@ -208,6 +349,10 @@ section{
     .about .about-content .left img{
         height: 350px;
         width: 350px;
+    }
+    .education .education-content .left img{
+        height: 250px;
+        width: 250px;
     }
 }
 
@@ -269,6 +414,14 @@ section{
         margin: 0 auto 60px;
     }
     .about .about-content .right{
+        flex: 100%;
+    }
+    .education .education-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .education .education-content .right{
         flex: 100%;
     }
 }
