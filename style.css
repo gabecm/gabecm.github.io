@@ -299,7 +299,7 @@ section{
     text-align: justify;
 }
 .margin-bottom {
-     margin-bottom: 100px;
+     margin-bottom: 80px;
 }
 
 /* experience styling */
@@ -379,6 +379,42 @@ section{
 }
 .experience ul li {
     margin-bottom: 0.5rem;
+}
+
+/* projects styling */
+.projects{
+    font-family: 'PT Sans', sans-serif;
+    background-color: lightgray;
+}
+.projects .title{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.projects .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 175px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.projects .title::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    font-size: 23px;
+    color: navy;
+    padding: 5px;
+    background: lightgray;
+    transform: translateX(-50%);
 }
 
 /* responsive media query start */
