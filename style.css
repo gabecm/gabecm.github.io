@@ -456,6 +456,22 @@ section{
     transform: translateX(-50%);
 }
 
+/* footer section styling */
+footer {
+    background: lightgray;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+}
+footer span a{
+    color: blue;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width{
