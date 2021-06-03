@@ -14,6 +14,12 @@ $(document).ready(function(){
         }
     })
 
+    // navbar scroll script
+    $( "a.scroll-link" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 50);
+    });
+
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
